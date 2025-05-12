@@ -1,0 +1,11 @@
+[Module]
+Name = CapCut Pro Unlock
+Author = yourname
+Description = Unlock CapCut Pro via MITM
+URL-Filter = capcut.net|bytedance.net
+
+[Rewrite]
+^https:\/\/.*\.capcut\.net\/.*(vip|pro|subscription).* url script-response-body https://raw.githubusercontent.com/trongson019/capcut-pro-shadowrocket1/main/capcut_pro.js
+
+[MITM]
+hostname = *.capcut.net, *.bytedance.net
